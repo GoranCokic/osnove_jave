@@ -13,16 +13,15 @@ public class Zadatak11 {
         int i;
         String zvezdica = "*";
         String crtica = "-";
-        String dodavanje = "";
-        String rezultat = "";
+        String dodavanje;
+        StringBuilder rezultat = new StringBuilder();
         for (i = 1; i < 100; i = i + 1) {
             if (i <= pregledanProcenat) {
                 dodavanje = zvezdica;
-                rezultat = rezultat + dodavanje;
             } else {
                 dodavanje = crtica;
-                rezultat = rezultat + dodavanje;
             }
+            rezultat.append(dodavanje);
         }
         System.out.println(rezultat);
     }
