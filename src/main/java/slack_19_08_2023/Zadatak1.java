@@ -22,16 +22,20 @@ public class Zadatak1 {
         String[] tabela = {
                 "_", "|", "_", "|", "_", "_", "|", "_", "|", "_", "_", "|", "_", "|", "_"
         };
+//        cuvaj samo polja
+//        O |
+
 
         //Usputne promenljive
-        String krajIgre = "";
+        String krajIgre = ""; // neka bude boolean
         String igrac ="";
-        int redIgraca = 1;
+        int redIgraca = 1; // readString "X" ili "O"
         String aktivanZnak = "";
         int a; //brojac za crtanje tabele
         int pozicija;
         int[] validnePozicije = {0, 2, 4, 5, 7, 9, 10, 12, 14};
         //Kraj Usputne promenljive
+//        i, j,k,. ...
 
         //trenutno stanje tabele
         for (a = 0; a < 15; a = a + 5) {
@@ -50,14 +54,16 @@ public class Zadatak1 {
             if (redIgraca == 1) {
                 igrac = "Prvi";
                 aktivanZnak = igrac1Znak;
-                System.out.print("Na redu je igrac " + igrac + " unesi poziciju sa znakom " + aktivanZnak + " : ");
+//                System.out.print("Na redu je igrac " + igrac + " unesi poziciju sa znakom " + aktivanZnak + " : ");
                 redIgraca = 2;
             } else {
                 igrac = "Drugi";
                 aktivanZnak = igrac2Znak;
-                System.out.print("Na redu je igrac " + igrac + " unesi poziciju sa znakom " + aktivanZnak + " : ");
+//                System.out.print("Na redu je igrac " + igrac + " unesi poziciju sa znakom " + aktivanZnak + " : ");
                 redIgraca = 1;
             }
+
+            System.out.print("Na redu je igrac " + igrac + " unesi poziciju sa znakom " + aktivanZnak + " : ");
             //Kraj Naizmenicna smena igraca
 
             //provera validnosti pozicije i unos u tabelu. odnosno da se ne unese na vec zauzeto polje
