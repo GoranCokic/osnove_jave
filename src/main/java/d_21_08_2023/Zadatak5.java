@@ -20,5 +20,27 @@
 
 package d_21_08_2023;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class Zadatak5 {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        Random nasumicno = new Random();
+
+        int i;
+        for (i = 0; i < 5; i++) {
+            int a = nasumicno.nextInt(50);
+            int b = nasumicno.nextInt(50);
+            int suma = a + b;
+            System.out.println("Koliko je " + a + " + " + b +"?");
+            int odgovor = s.nextInt();
+
+            if (odgovor == suma) {
+                System.out.println("Cestitam!");
+            } else {
+                System.out.println("Greska!");
+            }
+        }
+    }
 }
