@@ -8,5 +8,7 @@ public class UvodUOOP {
         System.out.println("kraj");
 
         System.out.println("ime je " + m.ime);
+
+        m.stampaj();
     }
 }
